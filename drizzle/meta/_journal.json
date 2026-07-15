@@ -15,6 +15,13 @@
       "when": 0,
       "tag": "0001_workflow_uniqueness",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1784123525587,
+      "tag": "0002_tearful_dazzler",
+      "breakpoints": true
     }
   ]
 }
