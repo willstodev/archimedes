@@ -1,0 +1,37 @@
+.env
+.env.*
+!.env.example
+.codex
+.codex-local
+node_modules/
+dist/
+coverage/
+.drizzle/
+*.log
+sources/
+
+# Local operational data and generated artifacts
+data/
+imports/
+exports/
+reports/
+backups/
+tmp/
+temp/
+*.dump
+*.backup
+*.sqlite
+*.sqlite3
+*.db
+*.csv
+*.tsv
+
+# Private documents and third-party session artifacts
+resumes/
+cover-letters/
+outreach-drafts/
+linkedin-exports/
+browser-profiles/
+storage-state*.json
+cookies*.json
+session*.json

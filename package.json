@@ -1,0 +1,53 @@
+{
+  "name": "archimedes",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.14.0",
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "cli": "tsx src/cli/index.ts",
+    "db:up": "docker compose up -d postgres",
+    "db:down": "docker compose down",
+    "db:migrate": "drizzle-kit migrate",
+    "db:generate": "drizzle-kit generate",
+    "db:backup": "tsx src/cli/index.ts db:backup",
+    "db:restore": "tsx src/cli/index.ts db:restore",
+    "import:legacy": "tsx src/cli/index.ts import:legacy",
+    "sources:sync": "tsx src/cli/index.ts sources:sync",
+    "search:jobs": "tsx src/cli/index.ts search:jobs",
+    "search:recruiters": "tsx src/cli/index.ts search:recruiters",
+    "jobs:list": "tsx src/cli/index.ts jobs:list",
+    "applications:update": "tsx src/cli/index.ts applications:update",
+    "outreach:update": "tsx src/cli/index.ts outreach:update",
+    "report:daily": "tsx src/cli/index.ts report:daily",
+    "tokens:report": "tsx src/cli/index.ts tokens:report"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.44.4",
+    "pg": "^8.16.3",
+    "pino": "^9.7.0",
+    "zod": "^4.0.17"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.2.1",
+    "@types/pg": "^8.15.5",
+    "drizzle-kit": "^0.31.4",
+    "eslint": "^10.7.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.5",
+    "eslint-plugin-import-x": "^4.17.1",
+    "eslint-plugin-unicorn": "^72.0.0",
+    "globals": "^17.7.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.64.0",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
